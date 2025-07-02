@@ -28,4 +28,7 @@ npx tsc --init
 
 # 4. Inicializar a configuração do Jest para TypeScript
 npx ts-jest config:init
+
+# 5. Executar os testes
+npm test
 ```
