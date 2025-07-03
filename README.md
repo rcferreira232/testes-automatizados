@@ -12,23 +12,28 @@ Repositório destinado à disciplina de **Testes Automatizados**, contendo exemp
 
 ---
 
-## 🛠️ Configuração do Projeto
+## 📚 Exemplos e Exercícios
 
-Siga os passos abaixo para configurar o ambiente local:
+### 📊 Exemplo 1: Calculadora
+
+Exemplo de uma calculadora simples com testes automatizados.
 
 ```bash
-# 1. Inicializar o projeto Node
+# 1. Navegar até a pasta do exemplo
+cd calculadora
+
+# 2. Inicializar o projeto Node
 npm init -y
 
-# 2. Instalar dependências de desenvolvimento
+# 3. Instalar dependências de desenvolvimento
 npm install --save-dev typescript jest ts-jest @types/jest
 
-# 3. Criar o arquivo tsconfig.json
+# 4. Criar o arquivo tsconfig.json
 npx tsc --init
 
-# 4. Inicializar a configuração do Jest para TypeScript
+# 5. Inicializar a configuração do Jest para TypeScript
 npx ts-jest config:init
 
-# 5. Executar os testes
+# 6. Executar os testes
 npm test
 ```
