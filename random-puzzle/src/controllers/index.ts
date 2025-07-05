@@ -1,3 +1,3 @@
-import { palavrasPrimasController } from "./palavrasPrimasControllers";
+import { palavrasPrimasController } from "./palavrasPrimasController";
 
 export { palavrasPrimasController };

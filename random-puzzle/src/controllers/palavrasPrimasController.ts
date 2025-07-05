@@ -1,6 +1,6 @@
 import { FastifyReply, FastifyRequest } from "fastify";
 /**
- * @file palavrasPrimasControllers.ts
+ * @file palavrasPrimasController.ts
  * @description Controlador para verificar se uma palavra é prima com base na soma dos valores das letras.
  * @requires fastify
 Um número primo é um número que possui somente dois divisores: ele mesmo e o número 1. Exemplos de números primos são: 1, 2, 3, 5, 17, 101 e 10007.
