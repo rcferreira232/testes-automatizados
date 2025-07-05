@@ -37,3 +37,30 @@ npx ts-jest config:init
 # 6. Executar os testes
 npm test
 ```
+
+### 📊 Exemplo 2:
+
+Exemplo de api com testes automatizados para resolver um puzzle aleatório do site ???.
+
+```bash
+# 1. Navegar até a pasta do exemplo
+cd random-puzzle
+
+# 2. Inicializar o projeto Node
+npm init -y
+
+# 3. Instalar dependências
+npm install fastify @fastify/cors tsx
+
+# 4. Instalar dependências de desenvolvimento
+npm install --save-dev typescript jest ts-jest @types/jest @types/node
+
+# 5. Criar o arquivo tsconfig.json
+npx tsc --init
+
+# 6. Inicializar a configuração do Jest para TypeScript
+npx ts-jest config:init
+
+# 7. Executar os testes
+npm test
+```
