@@ -63,4 +63,7 @@ npx ts-jest config:init
 
 # 7. Executar os testes
 npm test
+
+# 8. Iniciar a API
+npm run start
 ```
