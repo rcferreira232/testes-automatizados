@@ -4,7 +4,7 @@ import { FastifyReply, FastifyRequest } from "fastify";
 describe("PalavrasPrimasController", () => {
   it("should return true for a prime word", async () => {
     const request = {
-      body: { palavra: "abc" },
+      body: { palavra: "aA ba" },
     } as FastifyRequest<{ Body: { palavra: string } }>;
     const reply = {
       send: jest.fn(),
@@ -13,9 +13,9 @@ describe("PalavrasPrimasController", () => {
 
     await palavrasPrimasController.post(request, reply);
     expect(reply.send).toHaveBeenCalledWith({
-      palavra: "abc",
-      soma: 6,
-      resultado: false,
+      palavra: "aA ba",
+      soma: 31,
+      resultado: true,
     });
   });
 
@@ -32,6 +32,23 @@ describe("PalavrasPrimasController", () => {
     expect(reply.send).toHaveBeenCalledWith({
       palavra: "a",
       soma: 1,
+      resultado: false,
+    });
+  });
+
+  it("should return false for a non-prime word (word % 2 === 0)", async () => {
+    const request = {
+      body: { palavra: "abc" },
+    } as unknown as FastifyRequest<{ Body: { palavra: string } }>;
+    const reply = {
+      send: jest.fn(),
+      status: jest.fn().mockReturnThis(),
+    } as unknown as FastifyReply;
+
+    await palavrasPrimasController.post(request, reply);
+    expect(reply.send).toHaveBeenCalledWith({
+      palavra: "abc",
+      soma: 6,
       resultado: false,
     });
   });
