@@ -1,6 +1,6 @@
 import Fastify from "fastify";
 import cors from "@fastify/cors";
-import { routes } from "./routes";
+import { routes } from "@/infra/routes";
 import { env } from "@env";
 
 const app = Fastify({ logger: true });

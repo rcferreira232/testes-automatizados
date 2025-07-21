@@ -32,7 +32,7 @@
     "baseUrl": "./" /* Specify the base directory to resolve non-relative module names. */,
     "paths": {
       "@/*": ["src/*"],
-      "@env": ["src/lib/env.ts"],
+      "@env": ["env.ts"],
       "@controllers/*": ["src/controllers/*"],
       "@services/*": ["src/services/*"],
       "@utils/*": ["src/utils/*"]
